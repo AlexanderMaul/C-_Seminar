@@ -6,28 +6,20 @@ Console.WriteLine("Введите первое число и нажмите Ente
 int numA = Convert.ToInt32(Console.ReadLine());
 int numB = Convert.ToInt32(Console.ReadLine());
 
-// С использованием метода
-int remainder = num1 % num2;
-
-bool Metod(int x, int y)
-{
-    if (x % y == 0) return true;
-    return false;
-}
-bool met = Metod(num1, num2);
-if (met == true)
-{
-    Console.WriteLine($"кратно");
-}
-else
-    Console.WriteLine($"не кратно, остаток {remainder}");
-
-    
-
 // Обычное решение
-// if (numA % numB == 0) Console.WriteLine($"Первоее число {numA} кратно второму числу {numB}");
-// else if (numB > numA) Console.WriteLine($"Число {numA} не кратно числу {numB}. Остаток от деления 0");
-// else Console.WriteLine($"Число {numA} не кратно числу {numB}. Остаток от деления {numA % numB}");
+if (numA % numB == 0) Console.WriteLine($"Первоее число {numA} кратно второму числу {numB}");
+else if (numB > numA) Console.WriteLine($"Число {numA} не кратно числу {numB}. Остаток от деления 0");
+else Console.WriteLine($"Число {numA} не кратно числу {numB}. Остаток от деления {numA % numB}");
+
+
+// С использованием метода не удалось
+// int krtn = numA % numB;
+// {
+//     if (numA % numB == 0) return $"Первоее число {numA} кратно второму числу {numB}"; 
+//     return numB > numA ? $"Число {numA} не кратно числу {numB}. Остаток от деления 0" : $"Число {numA} не кратно числу {numB}. Остаток от деления {numA % numB}";
+// }
+// int krtnst = krtn(numA, numB);
+
 
 // Решение из семинара через bool - не совсем правильное
 // Console.Write("Введите первое число: ");
