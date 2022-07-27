@@ -24,7 +24,7 @@ string krtn(int num1, int num2)
     {
         if (num1 > num2) 
         {
-            string result = $"Число {numA} не кратно числу {numB}, так как первое число больше второго";
+            string result = $"Число {numB} не кратно числу {numA}. Остатка от деления нет, так как первое число больше второго";
             return result;
         }
         else
